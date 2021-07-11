@@ -38,6 +38,8 @@ window.addEventListener('load', () => {
         const left = cvs.getBoundingClientRect().left;
         const mouseX = e.pageX - left;
         const mouseY = e.pageY - top;
+        ctx.strokeStyle = colorValue;
+        ctx.lineWidth = rangeValue;
         if (flag) {
             ctx.lineTo(mouseX, mouseY)
             ctx.stroke();
